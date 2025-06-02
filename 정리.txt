@@ -1,0 +1,105 @@
+JDK 설치 (자바 개발 도구)
+	자바 실행 환경
+	- 컴파일러(번역)
+
+python.exe 설치 -> 파이썬 실행 환경 구축
+	- 인터프리터 (통역 / 자바스크립트와 실행방법 비슷)
+	- 가상환경
+
+
+자바스크립트 : 브라우저 or node
+	리액트 : yarn add
+----------------------------------------------------------------------
+
+* 파이선 설치
+        폴더 생성
+        cd c:\
+        cd 원하는 경로로 이동
+        python -m venv venv (원본환경에서 현재폴더로 환경복사)
+        cd venv\Scripts
+        activate(가상환경 활성화) / 안하면 원본화면 끌고옴
+
+
+        vscode extention
+        python ms 꺼 설치
+        black formatter ms 꺼 설치
+        jupyter 설치
+
+----------------------------------------------------------------------
+
+
+ctrl + enter : 현재 셀 실행
+shift + enter : 현재 셀 실행 + 다음 행 추가
+
+* 주석 처리 
+        # : 한줄 주석
+        """  """ : 여러줄 주석
+            """
+            여러 줄 주석
+            코드의 이해를 돕기 위해 사용
+            """
+
+
+* 변수 선언
+    타입 선언 언어 : 자바 (int a = 3)
+    타입 선언하지 않는 언어 : 자바스크립트 (let a =3 ), 파이썬
+    자바스크립트/자바 : "12" + 10 -> 1210 
+    파이썬 : "12" + 10 -> error
+
+------------------------------------------------------------------------- 
+
+* 파이썬 특징
+    세미클론 없음
+    {} 없음 => 탭으로 처리
+
+
+     - 문자열 연결 
+         + : head = "Python"
+             tail = " is fun"
+             print(head + tail)
+             => Python is fun
+
+     - 문자열 인덱싱과 슬라이싱(*)
+          - 인덱스 : 0부터 시작, -1를 붙이면 오른쪽끝부터 접근
+          - 슬라이싱[시작위치 : 종료위치] : 위치 지정하지 않으면 무조건 처음 or 마지막 의미
+
+* 포매팅
+     - 문자열 포매팅
+            - %s : 문자열,(모든 것 가능)
+            - %c : 문자 1개
+            - %d : 정수
+            - %f : 부동소수
+            - %% : 문자 %를 의미
+                    print("I eat %d apples" % 3)
+                    -> I eat 3 apples
+
+                    print("I eat %d apples. so I was sick for %s days" % (3, "three"))
+                    -> I eat 3 apples. so I was sick for three days
+                    -> 여러개는 묶어서 보내야함
+
+     - format 함수를 이용한 포매팅
+             print("I eat {0} apples" .format(3))
+             print("I eat {0} apples" .format(3))
+             print("I eat {0} apples" .format("five")) 
+             print("I eat {0} apples. so I was sick for {1} days" .format(3, "three")) 
+
+             => I eat 3 apples
+                I eat 3 apples
+                I eat five apples
+                I eat 3 apples. so I was sick for three days
+
+     - f 문자열 포매팅 : 연산도 가능
+         name = '홍길동'
+         age = 30
+         print(f"나의 이름은 {name} 입니다. 나이는 {age} 입니다")
+         print(f"나의 이름은 {name} 입니다. 나이는 {age + 1} 입니다")
+        
+         => 나의 이름은 홍길동 입니다. 나이는 30 입니다
+            나의 이름은 홍길동 입니다. 나이는 31 입니다
+
+
+문자열/ 리스트/ 딕셔너리
+* List(리스트) 
+
+
+마크다운 문법 
