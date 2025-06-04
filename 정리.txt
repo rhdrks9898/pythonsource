@@ -25,6 +25,11 @@ python.exe 설치 -> 파이썬 실행 환경 구축
         black formatter ms 꺼 설치
         jupyter 설치
 
+
+        ctrl + shift + p -> user setting json -> javascript 아래  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
 ----------------------------------------------------------------------
 
 
